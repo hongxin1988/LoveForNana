@@ -9,15 +9,20 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
+	
+   	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/default.css" type="text/css" >
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/soundmanager2-nodebug-jsmin.js"></script>
+
 </head>
 
 <body>
-    <div class="centered" id="loading"> <h1>LOADING...</h1></div>
+	<div class="centered" id="loading"> <h1>LOADING...</h1></div>
 		<button id="start_btn" class="btn btn-primary btn-large centered" style="text-align:center;" >START</button>
 	<div id="mainDiv">
 		<div id="content">
@@ -87,6 +92,7 @@
 			Copyright © 2013 HongXin  2009-2013
 		</div>
 	</div>
+	
 	<script type="text/javascript">
 		var MUSIC;
 		var start_btn = document.getElementById('start_btn');
@@ -119,11 +125,12 @@
 	        });
 	        MUSIC.load();
 	    }
-	
+
+
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
-		
-				document.getElementById("start_btn").onclick = function () {
+
+		document.getElementById("start_btn").onclick = function () {
             //music
 
             MUSIC.play();
@@ -172,7 +179,6 @@
 				$("#code").typewriter();
 			}
         }
-
 	</script>
 </body>
 </html>
